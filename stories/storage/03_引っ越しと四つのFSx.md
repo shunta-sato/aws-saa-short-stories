@@ -1,3 +1,20 @@
+---
+universe: photorim
+family: storage_architecture
+episode: 3
+terms:
+  - efs_standard
+  - efs_infrequent_access
+  - efs_one_zone
+  - efs_performance_mode
+  - efs_throughput_modes
+  - amazon_fsx_for_all_types
+  - fsx_windows_file_server
+  - fsx_lustre
+  - fsx_netapp_ontap
+  - fsx_openzfs
+---
+
 # 短編3: 引っ越しと四つのFSx — ファイルストレージ編
 
 *SAA-C03 短編小説集 / storage_architecture (3/5)*
