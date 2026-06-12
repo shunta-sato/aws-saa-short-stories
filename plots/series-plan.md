@@ -37,12 +37,12 @@
 
 ## S3以降の用語割当(シーズンレベル、話単位は各シーズン着手時に確定)
 
-- **S3 セキュリティ/ID(67語/5話)**: ①IAM基礎(ポリシー評価・ロール・STS・MFA等14語) ②組織とクロスアカウント(SCP/OU/Identity Center/ABAC/Permissions Boundary等11語) ③暗号化(KMS一式/SSE3種/ACM/CloudHSM等16語) ④アプリと データのアクセス制御(S3系/Cognito/ALB認証/Secrets/Parameter Store等16語) ⑤脅威検知と監査(GuardDuty/Inspector/Macie/Security Hub/Detective等10語)。⑤で堂島が父の入院で東京へ発つ「前震」を描く。
+- **S3 セキュリティ/ID(67語/5話)**: ①IAM基礎(ポリシー評価・ロール・STS・MFA等14語) ②組織とクロスアカウント(SCP/OU/Identity Center/ABAC/Permissions Boundary等11語) ③暗号化(KMS一式/SSE3種/ACM/CloudHSM等16語) ④アプリと データのアクセス制御(S3系/Cognito/ALB認証/Secrets/Parameter Store等16語) ⑤脅威検知と監査(GuardDuty/Inspector/Macie/Security Hub/Detective等10語)。⑤で瀬名が父の入院で東京へ発つ「前震」を描く。
 - **S4 データベース(41語/3話)**: ①RDS/Multi-AZ/レプリカ系 ②Aurora系+Global Database ③DynamoDB+ElastiCache。真鍋一花が本格合流。
 - **S5 取り込み・分析(39語/3話)**: ①Kinesis/Firehose/MSK ②Glue/Athena/Lake Formation/Redshift ③AI系サービス+QuickSuite(写真の自動タグ付け文脈)。真鍋メイン。
 - **S6 コンピューティング(39語/3話)**: ①EC2/ASG/起動テンプレート/スケーリングポリシー ②ECS/EKS/Fargate/Batch/Beanstalk ③Lambda詳説+Outposts/Wavelength。
 - **S7 疎結合(31語/2話)**: ①SQS/SNS ②EventBridge/Step Functions/Streams。
-- **S8 運用・ガバナンス(39語/3話)**: ①CloudWatch/X-Ray/Grafana ②CloudFormation/Organizations/Control Tower/Service Catalog ③SSM/Config/CloudTrail/Trusted Advisor/W-A。**③が「堂島がいない日」本番回**(human SPOF、break-glass、守屋の伏線全回収)。
+- **S8 運用・ガバナンス(39語/3話)**: ①CloudWatch/X-Ray/Grafana ②CloudFormation/Organizations/Control Tower/Service Catalog ③SSM/Config/CloudTrail/Trusted Advisor/W-A。**③が「瀬名がいない日」本番回**(human SPOF、break-glass、守屋の伏線全回収)。
 - **S9 コスト(33語/2話)**: ①購入オプション(RI/SP/Spot/キャパシティ予約) ②データ転送コスト/配賦/Budgets。城戸メイン。
 - **S10 完結(7語+総集/1話)**: 南海トラフ臨時情報。performance_and_scaling 7語(horizontal/vertical/stateless/stateful/auto_scaling/transfer_acceleration/api_gateway_throttling_usage_plan)を総集的に担当。美咲のアルバム、滝本(自治体)、全キャラ集結。災害原則(universe.md)を厳守し、「備える人々」の話として締める。
 
@@ -54,7 +54,7 @@
 | 矢吹「どの単位で戻すんや」 | S1全体 | **storage/06**(本番障害でユーザー単位復元) |
 | 狩野「止めないでください」→優先度を決める人へ | S1 DR編で種 | **storage/06**で中間到達、S10で完成 |
 | 守屋「人が入れへんかったら」 | S1 DR編 | S8③(break-glass本番) |
-| 堂島のヘッドハント・東京の両親 | universe v2 | S3⑤で前震(数日不在)→S8③本番 |
+| 瀬名のヘッドハント・東京の両親 | universe v2 | S3⑤で前震(数日不在)→S8③本番 |
 | 美咲の波打ったアルバム | storage/05 | S10 |
 | 青柳「検知して止めて戻せる仕組み」 | storage/05 | net/01で芽(監視自動化)→S8①② |
 | 城戸「請求書で説明できますか」 | storage/01 | net/02(NAT処理料金)→S9 |
