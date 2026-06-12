@@ -13,7 +13,7 @@
 - その復旧順序は、顧客との約束に合っているのか。
 - そのコストは、月末の請求書で説明できるのか。
 - その権限操作は、監査に書けるのか。
-- その判断は、堂島がいなくてもチームで再現できるのか。
+- その判断は、瀬名がいなくてもチームで再現できるのか。
 
 ## 舞台
 
@@ -90,7 +90,7 @@
 「30日後にStandard-IAへ移す案で進めます。
 ただし、ストーリー機能は対象外です。7日で消えるので、IAに置く意味がありません」
 
-堂島は腕を組んだまま聞いていた。
+瀬名は腕を組んだまま聞いていた。
 
 「取り出し料金は見た？」
 
@@ -104,7 +104,7 @@
 サムネイルだけやなくて、原本のプレフィックスも拾ってます」
 ```
 
-堂島は東京出身なので、関西弁の決め台詞は使わない。
+瀬名は東京出身なので、関西弁の決め台詞は使わない。
 
 ```text
 「いい判断だと思う」
@@ -209,7 +209,7 @@
 
 | 編 | 出来事・確立した構成 |
 |---|---|
-| storage/01 | ストレージコスト爆発(城戸の指摘)→ライフサイクル設計。Deep Archive誤投入事件(12時間待ち)。動画機能開始、編集スタジオ向け共有はEFS+gp3 |
+| storage/01(中編) | ストレージコスト爆発(城戸の180%指摘)→四つの質問とライフサイクル設計。私学連合会の商談成立。退会データ7年保管をDeep Archiveへ(tar固め)。誤投入事件=退会バッチが現役アルバムを巻き込み12時間待ち(七五三)。動画機能開始(マルチパート/Transfer Acceleration)、編集スタジオはEFS+gp3。守屋の紙の連絡網、風間の公開バケット指摘、青柳の採用面接、東雲買収の噂、実家のアルバム、瀬名への東京からの着信 |
 | storage/02 | メタデータDBをgp2→gp3移行。決済DBはio2(20,000 IOPS)。分析ログはst1/sc1。トランスコード一時領域はインスタンスストア。AWS Backupで一元管理(東京→大阪コピー) |
 | storage/03 | 東雲社(大阪)買収・移行開始。EFS(Standard/IA/One Zone、Elasticスループット)、FSx 4種の割当。矢吹が軟化 |
 | storage/04 | Snowball Edge×複数台で2PB移送、Snowconeでロケ先回収、Tape Gateway/File Gateway/Volume Gateway 2種。大阪DC閉鎖、矢吹が合流 |
@@ -244,13 +244,17 @@
 | 監査に説明が必要になる | KMS, IAM, CloudTrail, Config, GuardDuty, Security Hub |
 | NATや踏み台が片系に寄る | NAT Gateway per AZ, VPC Endpoint, PrivateLink, Bastion廃止 |
 
+## シリーズ構成
+
+全10シーズン・全35話の構成、各話の用語割当、伏線の張り/回収マップは `plots/series-plan.md` を正典とする。個別エピソードの設計図は `plots/` 配下の各プロットファイルを参照。プロットと執筆済み本文が矛盾した場合は本文とuniverse.mdが優先する。
+
 ## 今後のストーリー種
 
 | 仮タイトル | 主役 | 人間の課題 | AWSの課題 |
 |---|---|---|---|
 | 夜明け前の復元ポイント | 美咲・青柳・矢吹 | 実障害で復旧順序を決める | S3 Versioning, Backup, CRR, RTO/RPO |
 | 通れない道は復旧できない | 守屋・青柳 | AWSは動いているが人が入れない | SSM Session Manager, IAM, VPC Endpoint, NAT |
-| 堂島がいない日 | 堂島・美咲 | 優秀な人が人間SPOFになっている | Runbook, break-glass, CloudTrail, Incident Manager |
+| 瀬名がいない日 | 瀬名・美咲 | 優秀な人が人間SPOFになっている | Runbook, break-glass, CloudTrail, Incident Manager |
 | 臨時情報が出た朝 | 全員 | 南海トラフ臨時情報で、まだ壊れていない時点で備える | Pilot Light, Warm Standby, Route 53, CloudFront, SQS |
 | 片側だけの出口 | 城戸・美咲 | コスト削減と可用性の衝突 | NAT Gateway, VPC Endpoint, data transfer cost |
 | 鍵を使ったのは誰か | 風間・青柳 | 緊急操作と監査の両立 | IAM, KMS, CloudTrail, SCP, permission boundary |
