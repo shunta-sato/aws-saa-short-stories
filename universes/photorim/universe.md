@@ -246,10 +246,6 @@
 | 監査に説明が必要になる | KMS, IAM, CloudTrail, Config, GuardDuty, Security Hub |
 | NATや踏み台が片系に寄る | NAT Gateway per AZ, VPC Endpoint, PrivateLink, Bastion廃止 |
 
-## シリーズ構成
-
-全10シーズン・全35話の構成、各話の用語割当、伏線の張り/回収マップは `plots/series-plan.md` を正典とする。個別エピソードの設計図は `plots/` 配下の各プロットファイルを参照。プロットと執筆済み本文が矛盾した場合は本文とuniverse.mdが優先する。
-
 ## 今後のストーリー種
 
 | 仮タイトル | 主役 | 人間の課題 | AWSの課題 |
