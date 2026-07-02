@@ -10,6 +10,7 @@
 | stories/storage/03_引っ越しと四つのFSx.md | photorim | 10 |
 | stories/storage/04_データセンターを畳む日.md | photorim | 7 |
 | stories/storage/05_消せないデータ消えないデータ.md | photorim | 16 |
+| stories/storage/06_水曜日の本物.md | photorim | 0 |
 
 ## family別の残り
 
