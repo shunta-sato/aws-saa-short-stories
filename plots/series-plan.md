@@ -35,6 +35,17 @@
 | net/05 | 世界の入り口に鍵を | amazon_cloudfront, cloudfront_origin, cloudfront_cache_behavior, cloudfront_invalidation, cloudfront_origin_access_control, cloudfront_origin_access_identity, cloudfront_signed_url, cloudfront_signed_cookie, cloudfront_origin_shield, cloudfront_functions, lambda_at_edge, s3_static_website_hosting, aws_amplify (13) |
 | net/06 | 攻める者、迎える者 | waf_web_acl, waf_managed_rule_group, waf_rate_based_rule, shield_standard_advanced, amazon_api_gateway, api_gateway_rest_api, api_gateway_http_api, api_gateway_websocket_api, api_gateway_endpoint_types, api_gateway_vpc_link, lambda_function_url, aws_device_farm (12) |
 
+### S2幕間(ショートショート)
+
+用語集441語に立項されていないがSAA頻出・難解のトピックを、本編より短い幕間(1,500〜2,500字、terms: []、coverage対象外)で補強する。プロットは plots/network-ex01〜04。
+
+| 幕間 | 主題 | 配置 |
+|---|---|---|
+| ex01 通らなかった記録 | VPC Flow Logs | net/01の直後 |
+| ex02 トンネルの両端 | VGW / Customer Gateway(S2S VPNの構成要素) | net/02の直後 |
+| ex03 一本足の専用線 | Direct Connect Gateway / DX冗長化(DX+VPNフェイルオーバー) | net/02の直後(ex02の後) |
+| ex04 名前が届かない日 | Route 53 Resolver(ハイブリッドDNS) | net/04の直後 |
+
 ## S3以降の用語割当(シーズンレベル、話単位は各シーズン着手時に確定)
 
 - **S3 セキュリティ/ID(67語/5話)**: ①IAM基礎(ポリシー評価・ロール・STS・MFA等14語) ②組織とクロスアカウント(SCP/OU/Identity Center/ABAC/Permissions Boundary等11語) ③暗号化(KMS一式/SSE3種/ACM/CloudHSM等16語) ④アプリと データのアクセス制御(S3系/Cognito/ALB認証/Secrets/Parameter Store等16語) ⑤脅威検知と監査(GuardDuty/Inspector/Macie/Security Hub/Detective等10語)。⑤で瀬名が父の入院で東京へ発つ「前震」を描く。
