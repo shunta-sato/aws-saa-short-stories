@@ -37,7 +37,8 @@ AWS認定ソリューションアーキテクト – アソシエイト(SAA-C03)
 | # | タイトル | 主な内容 |
 |---|---|---|
 | S2-01 | [一本の通り道](stories/networking_and_application_security/01_一本の通り道.md) | VPC、サブネット、ルートテーブル、NAT、SG vs NACL |
-| 幕間 | 通らなかった記録(執筆予定) | VPC Flow Logs |
+| 幕間 | [通らなかった記録](stories/networking_and_application_security/ex01_通らなかった記録.md) | VPC Flow Logs(用語集外の頻出補強) |
+| S2-02 | 門は増やして、道は閉じる(執筆予定) | VPCエンドポイント、PrivateLink、ピアリング、TGW、DX、VPN |
 
 シーズン2の残りとシーズン3以降(セキュリティ、データベース…)の構成は [plots/series-plan.md](plots/series-plan.md) を参照してください。
 

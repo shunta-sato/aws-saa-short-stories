@@ -5,6 +5,7 @@
 | 編 | universe | 担当語数 |
 |---|---|---|
 | stories/networking_and_application_security/01_一本の通り道.md | photorim | 12 |
+| stories/networking_and_application_security/ex01_通らなかった記録.md | photorim | 0 |
 | stories/resilience_and_dr/01_金曜日のゲームデー.md | photorim | 13 |
 | stories/storage/01_請求書は嘘をつかない.md | photorim | 16 |
 | stories/storage/02_ブロックの行方.md | photorim | 12 |
