@@ -30,7 +30,16 @@ AWS認定ソリューションアーキテクト – アソシエイト(SAA-C03)
 | S1-06 | [金曜日のゲームデー](stories/resilience_and_dr/01_金曜日のゲームデー.md) | RPO/RTO、DR戦略4段階、フェイルオーバーの層 |
 | S1-07 | [水曜日の本物](stories/storage/06_水曜日の本物.md) | シーズン1最終話。本番障害と「戻す単位」(復習・物語推進回) |
 
-シーズン2以降(ネットワーク、セキュリティ、データベース…)の構成は [plots/series-plan.md](plots/series-plan.md) を参照してください。
+#### シーズン2: 城の通りと門(ネットワーク)(2年目)
+
+全6話+幕間4本(幕間は用語集外の頻出トピックを補強するショートショート)。順次公開。
+
+| # | タイトル | 主な内容 |
+|---|---|---|
+| S2-01 | [一本の通り道](stories/networking_and_application_security/01_一本の通り道.md) | VPC、サブネット、ルートテーブル、NAT、SG vs NACL |
+| 幕間 | 通らなかった記録(執筆予定) | VPC Flow Logs |
+
+シーズン2の残りとシーズン3以降(セキュリティ、データベース…)の構成は [plots/series-plan.md](plots/series-plan.md) を参照してください。
 
 進捗と分野別の残り用語は [docs/coverage.md](docs/coverage.md) を参照(ストレージ57語・レジリエンス/DR 13語はカバー完了)。
 
