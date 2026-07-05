@@ -42,7 +42,8 @@ AWS認定ソリューションアーキテクト – アソシエイト(SAA-C03)
 | 幕間 | [トンネルの両端](stories/networking_and_application_security/ex02_トンネルの両端.md) | Site-to-Site VPNの構成要素(VGW/CGW) |
 | 幕間 | [一本足の専用線](stories/networking_and_application_security/ex03_一本足の専用線.md) | Direct Connect Gateway、DXの冗長化 |
 | S2-03 | [行事の朝の受付戦争](stories/networking_and_application_security/03_行事の朝の受付戦争.md) | ELBファミリー(ALB/NLB/GWLB)、クロスゾーン、スティッキー |
-| S2-04 | 名前の見つけ方(執筆予定) | Route 53ルーティングポリシー、Global Accelerator |
+| S2-04 | [名前の見つけ方](stories/networking_and_application_security/04_名前の見つけ方.md) | Route 53ルーティングポリシー7種、Alias、Global Accelerator |
+| 幕間 | 名前が届かない日(執筆予定) | Route 53 Resolver(ハイブリッドDNS) |
 
 シーズン2の残りとシーズン3以降(セキュリティ、データベース…)の構成は [plots/series-plan.md](plots/series-plan.md) を参照してください。
 
