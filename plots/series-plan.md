@@ -50,9 +50,32 @@ S2の各話の火種は、前話の応急処置が生んだ歪みから連鎖さ
 | ex03 一本足の専用線 | Direct Connect Gateway / DX冗長化(DX+VPNフェイルオーバー) | net/02の直後(ex02の後) |
 | ex04 名前が届かない日 | Route 53 Resolver(ハイブリッドDNS) | net/04の直後 |
 
+## S3 鍵と名札編の話単位割当(67語/5話+幕間4本)
+
+**シーズンアーク「静かな侵入者」**: 5話貫通の潜入戦。各話の冒頭にタイムスタンプ付きの無機質なログ断片を1行置く(手口は描かない)。侵入者は最後まで捕まらない(現実路線)——勝利条件は「叩かれても倒れない・気づける・説明できる」。風間がシーズン主役格。⑤で瀬名の父入院の前震(正典)。プロットは plots/security-01〜05、security-ex01〜04。
+
+| 話 | タイトル(案) | 担当用語(数) |
+|---|---|---|
+| sec/01 | 名札の棚卸し | iam, iam_user, iam_group, iam_role, iam_policy, iam_identity_policy, iam_root_user, iam_access_key, multi_factor_authentication_mfa, sts_assume_role, iam_trust_policy, iam_policy_evaluation_logic, iam_explicit_deny, shared_responsibility_model (14) |
+| sec/02 | 誰も住んでいないはずの家 | organizations_organizational_unit, service_control_policy, aws_iam_identity_center, iam_identity_center_permission_set, iam_cross_account_access, iam_permissions_boundary, iam_session_policy, iam_abac, resource_based_policy, aws_resource_access_manager_aws_ram, aws_directory_service (11) |
+| sec/03 | 鍵の鍵 | aws_kms, kms_key_policy, kms_aws_managed_key, kms_customer_managed_key, kms_data_key, kms_envelope_encryption, kms_grant, kms_key_rotation, kms_multi_region_key, aws_cloudhsm, aws_certificate_manager_acm, acm_dns_validation, ebs_volume_encryption, s3_sse_s3, s3_sse_kms, s3_sse_c (16) |
+| sec/04 | 一晩の鍵交換 | s3_bucket_policy, s3_acl, s3_block_public_access, s3_object_ownership_bucket_owner_enforced, s3_presigned_url, s3_access_points, efs_access_points, vpc_endpoint_policy, amazon_cognito, alb_authentication_oidc_cognito, api_gateway_authorizers, aws_secrets_manager, secrets_manager_rotation, systems_manager_parameter_store, parameter_store_secure_string (15) |
+| sec/05 | 検知して、止まって、戻せる | amazon_guardduty, amazon_inspector, amazon_macie, amazon_detective, aws_security_hub, aws_artifact, aws_audit_manager, aws_shield, aws_waf, aws_network_firewall, aws_firewall_manager (11) |
+
+### S3幕間(ショートショート)
+
+問題データに登場するが用語集441語に立項されていない頻出・難解トピックの補強(terms: []、1,500〜2,500字、エンタメ方針適用)。
+
+| 幕間 | 主題 | 配置 | エンタメの核 |
+|---|---|---|---|
+| ex01 外から見える鍵穴 | IAM Access Analyzer | sec/01の直後 | 風間のノートの正の字と花丸 |
+| ex02 又貸しの合言葉 | 外部ID(混乱した代理人) | sec/02の直後 | 狩野×風間の東京コンビ、契約書が設定に翻訳できる |
+| ex03 名札を拾う者 | IMDSv2の強制 | sec/04の直後 | 矢吹のテプラ剥がし行脚の思い出 |
+| ex04 使われていない鍵 | 認証情報レポート/最終アクセス情報 | sec/05の直後(エピローグ) | 瀬名の鍵束が一番膨らんでいた(人間SPOFの数値化、S8布石) |
+
 ## S3以降の用語割当(シーズンレベル、話単位は各シーズン着手時に確定)
 
-- **S3 セキュリティ/ID(67語/5話)**: ①IAM基礎(ポリシー評価・ロール・STS・MFA等14語) ②組織とクロスアカウント(SCP/OU/Identity Center/ABAC/Permissions Boundary等11語) ③暗号化(KMS一式/SSE3種/ACM/CloudHSM等16語) ④アプリと データのアクセス制御(S3系/Cognito/ALB認証/Secrets/Parameter Store等16語) ⑤脅威検知と監査(GuardDuty/Inspector/Macie/Security Hub/Detective等10語)。⑤で瀬名が父の入院で東京へ発つ「前震」を描く。
+- **S3 セキュリティ/ID(67語/5話+幕間4本)**: 話単位の割当・シーズンアーク・幕間は下の「S3 鍵と名札編」節を正典とする。
 - **S4 データベース(41語/3話)**: ①RDS/Multi-AZ/レプリカ系 ②Aurora系+Global Database ③DynamoDB+ElastiCache。真鍋一花が本格合流。
 - **S5 取り込み・分析(39語/3話)**: ①Kinesis/Firehose/MSK ②Glue/Athena/Lake Formation/Redshift ③AI系サービス+QuickSuite(写真の自動タグ付け文脈)。真鍋メイン。
 - **S6 コンピューティング(39語/3話)**: ①EC2/ASG/起動テンプレート/スケーリングポリシー ②ECS/EKS/Fargate/Batch/Beanstalk ③Lambda詳説+Outposts/Wavelength。
