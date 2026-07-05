@@ -35,6 +35,10 @@
 | net/05 | 世界の入り口に鍵を | amazon_cloudfront, cloudfront_origin, cloudfront_cache_behavior, cloudfront_invalidation, cloudfront_origin_access_control, cloudfront_origin_access_identity, cloudfront_signed_url, cloudfront_signed_cookie, cloudfront_origin_shield, cloudfront_functions, lambda_at_edge, s3_static_website_hosting, aws_amplify (13) |
 | net/06 | 攻める者、迎える者 | waf_web_acl, waf_managed_rule_group, waf_rate_based_rule, shield_standard_advanced, amazon_api_gateway, api_gateway_rest_api, api_gateway_http_api, api_gateway_websocket_api, api_gateway_endpoint_types, api_gateway_vpc_link, lambda_function_url, aws_device_farm (12) |
 
+### S2設計原則「後手のシーズン」
+
+S2の各話の火種は、前話の応急処置が生んだ歪みから連鎖させる(01: 放置した赤丸が計画メンテ通知で締切付きに→急造のNAT3台→02: データ処理コストとCIDR事故→…)。シーズン主題は「先送りの利子」。S1の大火の籠城戦に対し、S2は小さい火が連鎖する遭遇戦として運ぶ。
+
 ### S2幕間(ショートショート)
 
 用語集441語に立項されていないがSAA頻出・難解のトピックを、本編より短い幕間(1,500〜2,500字、terms: []、coverage対象外)で補強する。プロットは plots/network-ex01〜04。**幕間は技術補強と同時に、登場人物の意外な一面・人間模様を見せるエンタメ回とする**(技術は1トピックに絞り、謎解き・役割逆転・照れ・賭けなどの仕掛けで人間を前に出す)。
@@ -67,6 +71,9 @@
 | 守屋「人が入れへんかったら」 | S1 DR編 | S8③(break-glass本番) |
 | 瀬名のヘッドハント・東京の両親 | universe v2 | S3⑤で前震(数日不在)→S8③本番 |
 | 美咲の波打ったアルバム | storage/05 | S10 |
+| 赤丸の半年放置(既知リスクの先送り構造) | **net/01** | **S8③**(人間SPOFの同型。「赤丸は構成図の中だけやなかった」) |
+| 安全は売上を生まない工事(先送りの利子と予算) | net/01(城戸の電話一本・臨時コスト) | **S9**(安全予算の言語化・城戸メイン) |
+| 赤丸にオーナーと期限がなかった(気づきを仕組みに載せる) | net/01(日付と持ち主の運用開始) | **S8**(Config等の検知自動化・青柳) |
 | 青柳「検知して止めて戻せる仕組み」 | storage/05 | net/01で芽(監視自動化)→S8①② |
 | 城戸「請求書で説明できますか」 | storage/01 | net/02(NAT処理料金)→S9 |
 | 真鍋一花(東雲の若手、矢吹の元部下) | **net/02で初登場(カメオ)** | S4〜S5でメイン |
