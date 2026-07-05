@@ -44,7 +44,8 @@ AWS認定ソリューションアーキテクト – アソシエイト(SAA-C03)
 | S2-03 | [行事の朝の受付戦争](stories/networking_and_application_security/03_行事の朝の受付戦争.md) | ELBファミリー(ALB/NLB/GWLB)、クロスゾーン、スティッキー |
 | S2-04 | [名前の見つけ方](stories/networking_and_application_security/04_名前の見つけ方.md) | Route 53ルーティングポリシー7種、Alias、Global Accelerator |
 | 幕間 | [名前が届かない日](stories/networking_and_application_security/ex04_名前が届かない日.md) | Route 53 Resolver(ハイブリッドDNS) |
-| S2-05 | 世界の入り口に鍵を(執筆予定) | CloudFront、OAC、署名付きURL、Lambda@Edge |
+| S2-05 | [世界の入り口に鍵を](stories/networking_and_application_security/05_世界の入り口に鍵を.md) | CloudFront、OAC、署名付きURL/Cookie、Lambda@Edge |
+| S2-06 | 攻める者、迎える者(執筆予定) | WAF、Shield、API Gateway |
 
 シーズン2の残りとシーズン3以降(セキュリティ、データベース…)の構成は [plots/series-plan.md](plots/series-plan.md) を参照してください。
 
