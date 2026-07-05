@@ -41,7 +41,8 @@ AWS認定ソリューションアーキテクト – アソシエイト(SAA-C03)
 | S2-02 | [門は増やして、道は閉じる](stories/networking_and_application_security/02_門は増やして道は閉じる.md) | VPCエンドポイント、PrivateLink、ピアリング、TGW、DX、VPN |
 | 幕間 | [トンネルの両端](stories/networking_and_application_security/ex02_トンネルの両端.md) | Site-to-Site VPNの構成要素(VGW/CGW) |
 | 幕間 | [一本足の専用線](stories/networking_and_application_security/ex03_一本足の専用線.md) | Direct Connect Gateway、DXの冗長化 |
-| S2-03 | 行事の朝の受付戦争(執筆予定) | ELBファミリー(ALB/NLB/GWLB)の選定 |
+| S2-03 | [行事の朝の受付戦争](stories/networking_and_application_security/03_行事の朝の受付戦争.md) | ELBファミリー(ALB/NLB/GWLB)、クロスゾーン、スティッキー |
+| S2-04 | 名前の見つけ方(執筆予定) | Route 53ルーティングポリシー、Global Accelerator |
 
 シーズン2の残りとシーズン3以降(セキュリティ、データベース…)の構成は [plots/series-plan.md](plots/series-plan.md) を参照してください。
 

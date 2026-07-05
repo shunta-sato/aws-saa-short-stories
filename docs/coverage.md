@@ -1,11 +1,12 @@
 # 用語カバレッジ
 
-担当済み: 98語 / 全441語
+担当済み: 112語 / 全441語
 
 | 編 | universe | 担当語数 |
 |---|---|---|
 | stories/networking_and_application_security/01_一本の通り道.md | photorim | 12 |
 | stories/networking_and_application_security/02_門は増やして道は閉じる.md | photorim | 12 |
+| stories/networking_and_application_security/03_行事の朝の受付戦争.md | photorim | 14 |
 | stories/networking_and_application_security/ex01_通らなかった記録.md | photorim | 0 |
 | stories/networking_and_application_security/ex02_トンネルの両端.md | photorim | 0 |
 | stories/networking_and_application_security/ex03_一本足の専用線.md | photorim | 0 |
@@ -43,9 +44,9 @@
 
 `amazon_cloudwatch`, `amazon_managed_grafana`, `amazon_managed_service_for_prometheus`, `aws_application_migration_service`, `aws_auto_scaling`, `aws_cli`, `aws_cloudformation`, `aws_cloudtrail`, `aws_compute_optimizer`, `aws_config`, `aws_control_tower`, `aws_datasync`, `aws_dms`, `aws_health_dashboard`, `aws_license_manager`, `aws_management_console`, `aws_organizations`, `aws_service_catalog`, `aws_snow_family`, `aws_systems_manager`, `aws_transfer_family`, `aws_trusted_advisor`, `aws_well_architected_tool`, `aws_x_ray`, `cloudformation_change_set`, `cloudformation_stack`, `cloudformation_stackset`, `cloudtrail_management_data_events`, `cloudtrail_organization_trail`, `cloudwatch_alarm`, `cloudwatch_logs`, `cloudwatch_logs_insights`, `cloudwatch_metric`, `config_rule`, `systems_manager_patch_manager`, `systems_manager_session_manager`, `trusted_advisor_checks`, `well_architected_framework`, `well_architected_pillars`
 
-### networking_and_application_security (75語) — 残り51語
+### networking_and_application_security (75語) — 残り37語
 
-`alb_host_based_routing`, `alb_listener_rule`, `alb_path_based_routing`, `alb_sticky_sessions`, `alb_target_group`, `amazon_api_gateway`, `amazon_cloudfront`, `amazon_route_53`, `api_gateway_endpoint_types`, `api_gateway_http_api`, `api_gateway_rest_api`, `api_gateway_vpc_link`, `api_gateway_websocket_api`, `application_load_balancer`, `aws_amplify`, `aws_device_farm`, `aws_global_accelerator`, `cloudfront_cache_behavior`, `cloudfront_functions`, `cloudfront_invalidation`, `cloudfront_origin`, `cloudfront_origin_access_control`, `cloudfront_origin_access_identity`, `cloudfront_origin_shield`, `cloudfront_signed_cookie`, `cloudfront_signed_url`, `elastic_load_balancing_elb`, `elb_cross_zone_load_balancing`, `gateway_load_balancer`, `gateway_load_balancer_endpoint`, `global_accelerator_static_anycast_ip`, `lambda_at_edge`, `lambda_function_url`, `network_load_balancer`, `nlb_static_ip_elastic_ip`, `nlb_tls_listener`, `nlb_udp_support`, `private_hosted_zone`, `route53_alias_record`, `route53_failover_routing`, `route53_geolocation_routing`, `route53_geoproximity_routing`, `route53_health_check`, `route53_latency_based_routing`, `route53_multivalue_answer_routing`, `route53_weighted_routing`, `s3_static_website_hosting`, `shield_standard_advanced`, `waf_managed_rule_group`, `waf_rate_based_rule`, `waf_web_acl`
+`amazon_api_gateway`, `amazon_cloudfront`, `amazon_route_53`, `api_gateway_endpoint_types`, `api_gateway_http_api`, `api_gateway_rest_api`, `api_gateway_vpc_link`, `api_gateway_websocket_api`, `aws_amplify`, `aws_device_farm`, `aws_global_accelerator`, `cloudfront_cache_behavior`, `cloudfront_functions`, `cloudfront_invalidation`, `cloudfront_origin`, `cloudfront_origin_access_control`, `cloudfront_origin_access_identity`, `cloudfront_origin_shield`, `cloudfront_signed_cookie`, `cloudfront_signed_url`, `global_accelerator_static_anycast_ip`, `lambda_at_edge`, `lambda_function_url`, `private_hosted_zone`, `route53_alias_record`, `route53_failover_routing`, `route53_geolocation_routing`, `route53_geoproximity_routing`, `route53_health_check`, `route53_latency_based_routing`, `route53_multivalue_answer_routing`, `route53_weighted_routing`, `s3_static_website_hosting`, `shield_standard_advanced`, `waf_managed_rule_group`, `waf_rate_based_rule`, `waf_web_acl`
 
 ### performance_and_scaling (7語) — 残り6語
 
