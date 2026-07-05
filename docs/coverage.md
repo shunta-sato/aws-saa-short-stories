@@ -11,6 +11,7 @@
 | stories/networking_and_application_security/ex01_通らなかった記録.md | photorim | 0 |
 | stories/networking_and_application_security/ex02_トンネルの両端.md | photorim | 0 |
 | stories/networking_and_application_security/ex03_一本足の専用線.md | photorim | 0 |
+| stories/networking_and_application_security/ex04_名前が届かない日.md | photorim | 0 |
 | stories/resilience_and_dr/01_金曜日のゲームデー.md | photorim | 13 |
 | stories/storage/01_請求書は嘘をつかない.md | photorim | 16 |
 | stories/storage/02_ブロックの行方.md | photorim | 12 |
