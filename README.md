@@ -54,6 +54,7 @@ AWS認定ソリューションアーキテクト – アソシエイト(SAA-C03)
 | # | タイトル | 主な内容 |
 |---|---|---|
 | S3-01 | [名札の棚卸し](stories/security_identity_and_access/01_名札の棚卸し.md) | IAM(ユーザー/グループ/ロール/ポリシー)、MFA、STS、評価ロジック、責任共有モデル |
+| 幕間 | [外から見える鍵穴](stories/security_identity_and_access/ex01_外から見える鍵穴.md) | IAM Access Analyzer(用語集外の頻出補強) |
 
 シーズン3の残りとシーズン4以降(データベース、分析…)の構成は [plots/series-plan.md](plots/series-plan.md) を参照してください。
 
