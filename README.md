@@ -47,7 +47,15 @@ AWS認定ソリューションアーキテクト – アソシエイト(SAA-C03)
 | S2-05 | [世界の入り口に鍵を](stories/networking_and_application_security/05_世界の入り口に鍵を.md) | CloudFront、OAC、署名付きURL/Cookie、Lambda@Edge |
 | S2-06 | [攻める者、迎える者](stories/networking_and_application_security/06_攻める者迎える者.md) | WAF、Shield、API Gateway、Device Farm |
 
-シーズン2の残りとシーズン3以降(セキュリティ、データベース…)の構成は [plots/series-plan.md](plots/series-plan.md) を参照してください。
+#### シーズン3: 鍵と名札(セキュリティ/ID)(2年目秋〜冬)
+
+全5話+幕間4本。シーズンアーク「静かな侵入者」。順次公開。
+
+| # | タイトル | 主な内容 |
+|---|---|---|
+| S3-01 | [名札の棚卸し](stories/security_identity_and_access/01_名札の棚卸し.md) | IAM(ユーザー/グループ/ロール/ポリシー)、MFA、STS、評価ロジック、責任共有モデル |
+
+シーズン3の残りとシーズン4以降(データベース、分析…)の構成は [plots/series-plan.md](plots/series-plan.md) を参照してください。
 
 進捗と分野別の残り用語は [docs/coverage.md](docs/coverage.md) を参照(ストレージ57語・レジリエンス/DR 13語はカバー完了)。
 
