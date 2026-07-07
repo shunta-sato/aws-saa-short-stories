@@ -1,6 +1,6 @@
 # 用語カバレッジ
 
-担当済み: 163語 / 全441語
+担当済み: 174語 / 全441語
 
 | 編 | universe | 担当語数 |
 |---|---|---|
@@ -16,6 +16,7 @@
 | stories/networking_and_application_security/ex04_名前が届かない日.md | photorim | 0 |
 | stories/resilience_and_dr/01_金曜日のゲームデー.md | photorim | 13 |
 | stories/security_identity_and_access/01_名札の棚卸し.md | photorim | 14 |
+| stories/security_identity_and_access/02_誰も住んでいないはずの家.md | photorim | 11 |
 | stories/security_identity_and_access/ex01_外から見える鍵穴.md | photorim | 0 |
 | stories/storage/01_請求書は嘘をつかない.md | photorim | 16 |
 | stories/storage/02_ブロックの行方.md | photorim | 12 |
@@ -58,9 +59,9 @@
 
 ### resilience_and_dr (13語) — ✅ 完了
 
-### security_identity_and_access (67語) — 残り53語
+### security_identity_and_access (67語) — 残り42語
 
-`acm_dns_validation`, `alb_authentication_oidc_cognito`, `amazon_cognito`, `amazon_detective`, `amazon_guardduty`, `amazon_inspector`, `amazon_macie`, `api_gateway_authorizers`, `aws_artifact`, `aws_audit_manager`, `aws_certificate_manager_acm`, `aws_cloudhsm`, `aws_directory_service`, `aws_firewall_manager`, `aws_iam_identity_center`, `aws_kms`, `aws_network_firewall`, `aws_resource_access_manager_aws_ram`, `aws_secrets_manager`, `aws_security_hub`, `aws_shield`, `aws_waf`, `ebs_volume_encryption`, `efs_access_points`, `iam_abac`, `iam_cross_account_access`, `iam_identity_center_permission_set`, `iam_permissions_boundary`, `iam_session_policy`, `kms_aws_managed_key`, `kms_customer_managed_key`, `kms_data_key`, `kms_envelope_encryption`, `kms_grant`, `kms_key_policy`, `kms_key_rotation`, `kms_multi_region_key`, `organizations_organizational_unit`, `parameter_store_secure_string`, `resource_based_policy`, `s3_access_points`, `s3_acl`, `s3_block_public_access`, `s3_bucket_policy`, `s3_object_ownership_bucket_owner_enforced`, `s3_presigned_url`, `s3_sse_c`, `s3_sse_kms`, `s3_sse_s3`, `secrets_manager_rotation`, `service_control_policy`, `systems_manager_parameter_store`, `vpc_endpoint_policy`
+`acm_dns_validation`, `alb_authentication_oidc_cognito`, `amazon_cognito`, `amazon_detective`, `amazon_guardduty`, `amazon_inspector`, `amazon_macie`, `api_gateway_authorizers`, `aws_artifact`, `aws_audit_manager`, `aws_certificate_manager_acm`, `aws_cloudhsm`, `aws_firewall_manager`, `aws_kms`, `aws_network_firewall`, `aws_secrets_manager`, `aws_security_hub`, `aws_shield`, `aws_waf`, `ebs_volume_encryption`, `efs_access_points`, `kms_aws_managed_key`, `kms_customer_managed_key`, `kms_data_key`, `kms_envelope_encryption`, `kms_grant`, `kms_key_policy`, `kms_key_rotation`, `kms_multi_region_key`, `parameter_store_secure_string`, `s3_access_points`, `s3_acl`, `s3_block_public_access`, `s3_bucket_policy`, `s3_object_ownership_bucket_owner_enforced`, `s3_presigned_url`, `s3_sse_c`, `s3_sse_kms`, `s3_sse_s3`, `secrets_manager_rotation`, `systems_manager_parameter_store`, `vpc_endpoint_policy`
 
 ### storage_architecture (57語) — ✅ 完了
 
