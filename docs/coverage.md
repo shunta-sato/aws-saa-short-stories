@@ -16,6 +16,7 @@
 | stories/networking_and_application_security/ex04_名前が届かない日.md | photorim | 0 |
 | stories/resilience_and_dr/01_金曜日のゲームデー.md | photorim | 13 |
 | stories/security_identity_and_access/01_名札の棚卸し.md | photorim | 14 |
+| stories/security_identity_and_access/ex01_外から見える鍵穴.md | photorim | 0 |
 | stories/storage/01_請求書は嘘をつかない.md | photorim | 16 |
 | stories/storage/02_ブロックの行方.md | photorim | 12 |
 | stories/storage/03_引っ越しと四つのFSx.md | photorim | 10 |
