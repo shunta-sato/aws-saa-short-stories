@@ -21,6 +21,7 @@
 | stories/security_identity_and_access/04_一晩の鍵交換.md | photorim | 15 |
 | stories/security_identity_and_access/ex01_外から見える鍵穴.md | photorim | 0 |
 | stories/security_identity_and_access/ex02_又貸しの合言葉.md | photorim | 0 |
+| stories/security_identity_and_access/ex03_名札を拾う者.md | photorim | 0 |
 | stories/storage/01_請求書は嘘をつかない.md | photorim | 16 |
 | stories/storage/02_ブロックの行方.md | photorim | 12 |
 | stories/storage/03_引っ越しと四つのFSx.md | photorim | 10 |
