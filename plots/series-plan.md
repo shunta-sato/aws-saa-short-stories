@@ -73,10 +73,29 @@ S2の各話の火種は、前話の応急処置が生んだ歪みから連鎖さ
 | ex03 名札を拾う者 | IMDSv2の強制 | sec/04の直後 | 矢吹のテプラ剥がし行脚の思い出 |
 | ex04 使われていない鍵 | 認証情報レポート/最終アクセス情報 | sec/05の直後(エピローグ) | 瀬名の鍵束が一番膨らんでいた(人間SPOFの数値化、S8布石) |
 
+## S4 記録の器編の話単位割当(41語/3話+幕間2本)
+
+**シーズンアーク「数える人」**: 3年目春。真鍋一花が神戸へ正式合流し、矢吹の「復元単位」の思想がデータモデリングの言葉に翻訳されるシーズン。火種は成長の利子——動画GA後のユーザー増と新商品「思い出検索」で、S1-02でgp3化して以来だましだまし育ててきたメタデータDB(RDS)が天井に触れる。各話の主題は「器を選ぶ前に、中身と読まれ方を数える」。真鍋の「で、1日何件です?」がシーズンの背骨。瀬名は東京との行き来が増える(数日単位の不在。理由は説明しない——S8への継続前震)。
+
+| 話 | タイトル(案) | 担当用語(数) |
+|---|---|---|
+| db/01 | 行列は窓口で分ける | amazon_rds, rds_multi_az_deployment, rds_multi_az_db_cluster, read_replica, rds_read_replica_promotion, rds_cross_region_read_replica, rds_proxy, rds_snapshot, rds_automated_backup, rds_point_in_time_recovery, rds_storage_autoscaling, amazon_elasticache, elasticache_redis_memcached_choice, elasticache_cluster_mode, elasticache_lazy_loading, elasticache_write_through (16) |
+| db/02 | 六つの写し、一つの器 | amazon_aurora, aurora_cluster_volume, aurora_replica, aurora_writer_reader_endpoint, amazon_aurora_serverless, aurora_serverless_v2_capacity, aurora_global_database, amazon_redshift, amazon_documentdb, amazon_neptune, amazon_keyspaces (11) |
+| db/03 | 数えてから、建てる | amazon_dynamodb, dynamodb_partition_key, dynamodb_sort_key, dynamodb_gsi, dynamodb_lsi, dynamodb_rcu_wcu, dynamodb_provisioned_capacity, dynamodb_on_demand_capacity, dynamodb_autoscaling, dynamodb_consistency_models, dynamodb_ttl, dynamodb_pitr, dynamodb_global_tables, dynamodb_dax (14) |
+
+### S4幕間(ショートショート)
+
+問題データに登場するが用語集441語に立項されていない頻出・難解トピックの補強(terms: []、1,500〜2,500字、エンタメ方針適用)。DMS・DynamoDB Streamsは用語集に立項済みのため幕間では扱わない(それぞれS5・S7系の本編担当)。
+
+| 幕間 | 主題 | 配置 | エンタメの核 |
+|---|---|---|---|
+| ex01 パスワードのない扉 | IAMデータベース認証(RDS/Aurora) | db/01の直後 | 風間の月次訪問、合鍵台帳の「回さなくていい扉」。青柳の例外台帳当番が実を結ぶ |
+| ex02 巻き戻しの作法 | Aurora Backtrack(PITRとの対比) | db/02の直後 | 真鍋の検証事故と矢吹のテープ巻き戻しの記憶。青柳×真鍋の初共同作業 |
+
 ## S3以降の用語割当(シーズンレベル、話単位は各シーズン着手時に確定)
 
-- **S3 セキュリティ/ID(67語/5話+幕間4本)**: 話単位の割当・シーズンアーク・幕間は下の「S3 鍵と名札編」節を正典とする。
-- **S4 データベース(41語/3話)**: ①RDS/Multi-AZ/レプリカ系 ②Aurora系+Global Database ③DynamoDB+ElastiCache。真鍋一花が本格合流。
+- **S3 セキュリティ/ID(67語/5話+幕間4本)**: 話単位の割当・シーズンアーク・幕間は上の「S3 鍵と名札編」節を正典とする。
+- **S4 データベース(41語/3話+幕間2本)**: 話単位の割当・シーズンアーク・幕間は上の「S4 記録の器編」節を正典とする。
 - **S5 取り込み・分析(39語/3話)**: ①Kinesis/Firehose/MSK ②Glue/Athena/Lake Formation/Redshift ③AI系サービス+QuickSuite(写真の自動タグ付け文脈)。真鍋メイン。
 - **S6 コンピューティング(39語/3話)**: ①EC2/ASG/起動テンプレート/スケーリングポリシー ②ECS/EKS/Fargate/Batch/Beanstalk ③Lambda詳説+Outposts/Wavelength。
 - **S7 疎結合(31語/2話)**: ①SQS/SNS ②EventBridge/Step Functions/Streams。
