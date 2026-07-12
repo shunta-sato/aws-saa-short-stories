@@ -61,8 +61,9 @@ AWS認定ソリューションアーキテクト – アソシエイト(SAA-C03)
 | S3-04 | [一晩の鍵交換](stories/security_identity_and_access/04_一晩の鍵交換.md) | Secrets Manager/Parameter Store、S3公開統制(BPA、Object Ownership、署名付きURL、アクセスポイント)、Cognito、ALB認証、API GWオーソライザー |
 | 幕間 | [名札を拾う者](stories/security_identity_and_access/ex03_名札を拾う者.md) | インスタンスメタデータとIMDSv2の強制(用語集外の頻出補強) |
 | S3-05 | [検知して、止まって、戻せる](stories/security_identity_and_access/05_検知して止まって戻せる.md) | GuardDuty、Inspector、Macie、Detective、Security Hub、Artifact、Audit Manager、Network Firewall、Firewall Manager、Shield/WAF再掲 |
+| 幕間 | [使われていない鍵](stories/security_identity_and_access/ex04_使われていない鍵.md) | 認証情報レポート・最終アクセス情報(用語集外の頻出補強)。シーズンエピローグ |
 
-シーズン3の残りとシーズン4以降(データベース、分析…)の構成は [plots/series-plan.md](plots/series-plan.md) を参照してください。
+シーズン4以降(データベース、分析…)の構成は [plots/series-plan.md](plots/series-plan.md) を参照してください。
 
 進捗と分野別の残り用語は [docs/coverage.md](docs/coverage.md) を参照(ストレージ57語・レジリエンス/DR 13語・ネットワーク75語・セキュリティ/ID 67語はカバー完了)。
 
