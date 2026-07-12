@@ -58,6 +58,7 @@ AWS認定ソリューションアーキテクト – アソシエイト(SAA-C03)
 | S3-02 | [誰も住んでいないはずの家](stories/security_identity_and_access/02_誰も住んでいないはずの家.md) | Organizations/OU/SCP、Identity Center、クロスアカウント、許可境界、ABAC、RAM |
 | 幕間 | [又貸しの合言葉](stories/security_identity_and_access/ex02_又貸しの合言葉.md) | 外部ID・混乱した代理人問題(用語集外の頻出補強) |
 | S3-03 | [鍵の鍵](stories/security_identity_and_access/03_鍵の鍵.md) | KMS(エンベロープ暗号化、キーポリシー、グラント、マルチリージョンキー)、CloudHSM、ACM、SSE 3方式、EBS暗号化 |
+| S3-04 | [一晩の鍵交換](stories/security_identity_and_access/04_一晩の鍵交換.md) | Secrets Manager/Parameter Store、S3公開統制(BPA、Object Ownership、署名付きURL、アクセスポイント)、Cognito、ALB認証、API GWオーソライザー |
 
 シーズン3の残りとシーズン4以降(データベース、分析…)の構成は [plots/series-plan.md](plots/series-plan.md) を参照してください。
 

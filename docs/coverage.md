@@ -1,6 +1,6 @@
 # 用語カバレッジ
 
-担当済み: 190語 / 全441語
+担当済み: 205語 / 全441語
 
 | 編 | universe | 担当語数 |
 |---|---|---|
@@ -18,6 +18,7 @@
 | stories/security_identity_and_access/01_名札の棚卸し.md | photorim | 14 |
 | stories/security_identity_and_access/02_誰も住んでいないはずの家.md | photorim | 11 |
 | stories/security_identity_and_access/03_鍵の鍵.md | photorim | 16 |
+| stories/security_identity_and_access/04_一晩の鍵交換.md | photorim | 15 |
 | stories/security_identity_and_access/ex01_外から見える鍵穴.md | photorim | 0 |
 | stories/security_identity_and_access/ex02_又貸しの合言葉.md | photorim | 0 |
 | stories/storage/01_請求書は嘘をつかない.md | photorim | 16 |
@@ -61,9 +62,9 @@
 
 ### resilience_and_dr (13語) — ✅ 完了
 
-### security_identity_and_access (67語) — 残り26語
+### security_identity_and_access (67語) — 残り11語
 
-`alb_authentication_oidc_cognito`, `amazon_cognito`, `amazon_detective`, `amazon_guardduty`, `amazon_inspector`, `amazon_macie`, `api_gateway_authorizers`, `aws_artifact`, `aws_audit_manager`, `aws_firewall_manager`, `aws_network_firewall`, `aws_secrets_manager`, `aws_security_hub`, `aws_shield`, `aws_waf`, `efs_access_points`, `parameter_store_secure_string`, `s3_access_points`, `s3_acl`, `s3_block_public_access`, `s3_bucket_policy`, `s3_object_ownership_bucket_owner_enforced`, `s3_presigned_url`, `secrets_manager_rotation`, `systems_manager_parameter_store`, `vpc_endpoint_policy`
+`amazon_detective`, `amazon_guardduty`, `amazon_inspector`, `amazon_macie`, `aws_artifact`, `aws_audit_manager`, `aws_firewall_manager`, `aws_network_firewall`, `aws_security_hub`, `aws_shield`, `aws_waf`
 
 ### storage_architecture (57語) — ✅ 完了
 
