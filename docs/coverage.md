@@ -1,6 +1,6 @@
 # 用語カバレッジ
 
-担当済み: 205語 / 全441語
+担当済み: 216語 / 全441語
 
 | 編 | universe | 担当語数 |
 |---|---|---|
@@ -19,6 +19,7 @@
 | stories/security_identity_and_access/02_誰も住んでいないはずの家.md | photorim | 11 |
 | stories/security_identity_and_access/03_鍵の鍵.md | photorim | 16 |
 | stories/security_identity_and_access/04_一晩の鍵交換.md | photorim | 15 |
+| stories/security_identity_and_access/05_検知して止まって戻せる.md | photorim | 11 |
 | stories/security_identity_and_access/ex01_外から見える鍵穴.md | photorim | 0 |
 | stories/security_identity_and_access/ex02_又貸しの合言葉.md | photorim | 0 |
 | stories/security_identity_and_access/ex03_名札を拾う者.md | photorim | 0 |
@@ -63,9 +64,7 @@
 
 ### resilience_and_dr (13語) — ✅ 完了
 
-### security_identity_and_access (67語) — 残り11語
-
-`amazon_detective`, `amazon_guardduty`, `amazon_inspector`, `amazon_macie`, `aws_artifact`, `aws_audit_manager`, `aws_firewall_manager`, `aws_network_firewall`, `aws_security_hub`, `aws_shield`, `aws_waf`
+### security_identity_and_access (67語) — ✅ 完了
 
 ### storage_architecture (57語) — ✅ 完了
 
