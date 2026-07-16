@@ -1,4 +1,4 @@
-# シリーズ構成計画(全10シーズン・全35話)
+# シリーズ構成計画(全10シーズン・全36話)
 
 このファイルはシリーズ全体の正典計画。各話の詳細プロットは `plots/` 配下の個別ファイル、世界観・人物は `universes/photorim/universe.md` を参照。**プロットは執筆前の設計図であり、執筆済み本文と矛盾した場合は本文と universe.md が優先する。**
 
@@ -16,7 +16,7 @@
 | 1 | ストレージとレジリエンス | storage_architecture + resilience_and_dr | 7(既刊6+新作1) | 既刊+plots/storage-06 | 1年目春〜冬 |
 | 2 | 城の通りと門(ネットワーク) | networking_and_application_security | 6 | plots/network-01〜06 | 2年目春〜夏 |
 | 3 | 鍵と名札(セキュリティ/ID) | security_identity_and_access | 5 | 構想(下記) | 2年目秋〜冬 |
-| 4 | 記録の器(データベース) | database_architecture | 3 | 構想 | 3年目春 |
+| 4 | 記録の器(データベース) | database_architecture | 4 | plots/database-01〜04 | 3年目春〜夏 |
 | 5 | 流れる記録(取り込み・分析) | data_ingestion_and_analytics | 3 | 構想 | 3年目夏 |
 | 6 | 動かす力(コンピューティング) | compute_and_containers | 3 | 構想 | 3年目秋 |
 | 7 | ほどよい距離(疎結合) | decoupling_and_integration | 2 | 構想 | 3年目冬 |
@@ -73,16 +73,40 @@ S2の各話の火種は、前話の応急処置が生んだ歪みから連鎖さ
 | ex03 名札を拾う者 | IMDSv2の強制 | sec/04の直後 | 矢吹のテプラ剥がし行脚の思い出 |
 | ex04 使われていない鍵 | 認証情報レポート/最終アクセス情報 | sec/05の直後(エピローグ) | 瀬名の鍵束が一番膨らんでいた(人間SPOFの数値化、S8布石) |
 
+## S4 記録の器編の話単位割当(41語/4話+幕間3本)
+
+**シーズンアーク「数える人」**: 3年目春。真鍋一花が神戸へ正式合流し、矢吹の「復元単位」の思想がデータモデリングの言葉に翻訳されるシーズン。火種は成長の利子——動画GA後のユーザー増と新商品「思い出検索」で、S1-02でgp3化して以来だましだまし育ててきたメタデータDB(RDS)が天井に触れる。各話の主題は「器を選ぶ前に、中身と読まれ方を数える」。真鍋の「で、1日何件です?」がシーズンの背骨。瀬名は東京との行き来が増える(数日単位の不在。理由は説明しない——S8への継続前震)。
+
+**シーズンの人間側の主題(db/03を軸に)**: フォトリムには頼れるシニアDB人材がいない——美咲も瀬名もインフラ寄り、真鍋は26歳で大規模データは未経験。検証1万件で出ない問題が本番100万件で顔を出し、クラウドの馬力(スケールアップ)で殴れば請求書が跳ねる。その袋小路で「データ設計に立ち返る」導き手として、東雲アーカイブズの元DBA・戸倉重雄(引退・一話限りの客演)を立てる。矢吹=復元単位(運用の系譜)と戸倉=形と分布(設計の系譜)が真鍋の中で合流し、「設計レビューの型」の制度化でシニア不在を型と帳面で埋める——真鍋の成長がそのままチームに「データの層」を増やし、S5(分析)で真鍋がメインを張る土台になる。
+
+| 話 | タイトル(案) | 担当用語(数) |
+|---|---|---|
+| db/01 | 行列は窓口で分ける | amazon_rds, rds_multi_az_deployment, rds_multi_az_db_cluster, read_replica, rds_read_replica_promotion, rds_cross_region_read_replica, rds_proxy, rds_snapshot, rds_automated_backup, rds_point_in_time_recovery, rds_storage_autoscaling, amazon_elasticache, elasticache_redis_memcached_choice, elasticache_cluster_mode, elasticache_lazy_loading, elasticache_write_through (16) |
+| db/02 | 六つの写し、一つの器 | amazon_aurora, aurora_cluster_volume, aurora_replica, aurora_writer_reader_endpoint, amazon_aurora_serverless, aurora_serverless_v2_capacity, aurora_global_database, amazon_redshift, amazon_documentdb, amazon_neptune, amazon_keyspaces (11) |
+| db/03 | 一万件は嘘をつく | [](物語推進+データ設計基礎回。S1-01「請求書は嘘をつかない」との対題。戸倉客演、設計レビュー制度化) |
+| db/04 | 数えてから、建てる | amazon_dynamodb, dynamodb_partition_key, dynamodb_sort_key, dynamodb_gsi, dynamodb_lsi, dynamodb_rcu_wcu, dynamodb_provisioned_capacity, dynamodb_on_demand_capacity, dynamodb_autoscaling, dynamodb_consistency_models, dynamodb_ttl, dynamodb_pitr, dynamodb_global_tables, dynamodb_dax (14) |
+
+### S4幕間(ショートショート)
+
+問題データに登場するが用語集441語に立項されていない頻出・難解トピックの補強(terms: []、1,500〜2,500字、エンタメ方針適用)。DMS・DynamoDB Streamsは用語集に立項済みのため幕間では扱わない(それぞれS5・S7系の本編担当)。
+
+| 幕間 | 主題 | 配置 | エンタメの核 |
+|---|---|---|---|
+| ex01 パスワードのない扉 | IAMデータベース認証(RDS/Aurora) | db/01の直後 | 風間の月次訪問、合鍵台帳の「回さなくていい扉」。青柳の例外台帳当番が実を結ぶ |
+| ex02 巻き戻しの作法 | Aurora Backtrack(PITRとの対比) | db/02の直後(db/03の前) | 真鍋の検証事故と矢吹のテープ巻き戻しの記憶。青柳×真鍋の初共同作業 |
+| ex03 豆の帳面 | (人物回・技術新出なし)戸倉重雄の29年と「記録を付ける人」 | db/03の直後(db/04の前) | 帳面を返しに行く真鍋+美咲。豆の台帳=人間版アクセスパターン。「引けん記録は、無いのと同じや」 |
+
 ## S3以降の用語割当(シーズンレベル、話単位は各シーズン着手時に確定)
 
-- **S3 セキュリティ/ID(67語/5話+幕間4本)**: 話単位の割当・シーズンアーク・幕間は下の「S3 鍵と名札編」節を正典とする。
-- **S4 データベース(41語/3話)**: ①RDS/Multi-AZ/レプリカ系 ②Aurora系+Global Database ③DynamoDB+ElastiCache。真鍋一花が本格合流。
+- **S3 セキュリティ/ID(67語/5話+幕間4本)**: 話単位の割当・シーズンアーク・幕間は上の「S3 鍵と名札編」節を正典とする。
+- **S4 データベース(41語/4話+幕間3本)**: 話単位の割当・シーズンアーク・幕間は上の「S4 記録の器編」節を正典とする。
 - **S5 取り込み・分析(39語/3話)**: ①Kinesis/Firehose/MSK ②Glue/Athena/Lake Formation/Redshift ③AI系サービス+QuickSuite(写真の自動タグ付け文脈)。真鍋メイン。
 - **S6 コンピューティング(39語/3話)**: ①EC2/ASG/起動テンプレート/スケーリングポリシー ②ECS/EKS/Fargate/Batch/Beanstalk ③Lambda詳説+Outposts/Wavelength。
 - **S7 疎結合(31語/2話)**: ①SQS/SNS ②EventBridge/Step Functions/Streams。
 - **S8 運用・ガバナンス(39語/3話)**: ①CloudWatch/X-Ray/Grafana ②CloudFormation/Organizations/Control Tower/Service Catalog ③SSM/Config/CloudTrail/Trusted Advisor/W-A。**③が「瀬名がいない日」本番回**(human SPOF、break-glass、守屋の伏線全回収)。
 - **S9 コスト(33語/2話)**: ①購入オプション(RI/SP/Spot/キャパシティ予約) ②データ転送コスト/配賦/Budgets。城戸メイン。
 - **S10 完結(7語+総集/1話)**: 南海トラフ臨時情報。performance_and_scaling 7語(horizontal/vertical/stateless/stateful/auto_scaling/transfer_acceleration/api_gateway_throttling_usage_plan)を総集的に担当。美咲のアルバム、滝本(自治体)、全キャラ集結。災害原則(universe.md)を厳守し、「備える人々」の話として締める。
+  - **構図「助けに来る人々」**: メインチームのピンチに、歴代シーズンのゲストが次々と駆けつける。ただしヒーロー着地ではなく——それぞれが**自分の持ち場から自分の得意な一手だけ**を差し出す(滝本=自治体側の窓口調整、戸倉=器の一言、狩野=止める/止めないの優先度判断、守屋=物理と人の導線、東雲の旧知=素材と記録)。誰も万能にしない・全員の入退場を丁寧に、はここでも厳守。各ゲストの「来る理由」は各シーズンで張った伏線がそのまま答えになるように逆算する(S5以降の各シーズンで登場・再登場の置き方をこの逆算で決める)。
 
 ## 伏線マップ(張る→回収)
 
@@ -102,6 +126,11 @@ S2の各話の火種は、前話の応急処置が生んだ歪みから連鎖さ
 | 真鍋一花(東雲の若手、矢吹の元部下) | **net/02で初登場(カメオ)** | S4〜S5でメイン |
 | 滝本早苗(高知の自治体防災担当) | **storage/06で初登場** | net/03、S10 |
 | CloudFrontオリジンフェイルオーバー実発動 | S1 DR編(訓練) | **storage/06**(本番) |
+| 東雲の素材管理DBは急ぎのリフト&シフト(設計は未見直し) | S1-03〜04の裏側(db/03で明示) | **db/03**(設計負債の顕在化)→db/04(間取りから建て直す) |
+| 戸倉の帳面「器を替える日は、間取りを疑う日」・設計レビューの型 | **db/03** | db/04(GA前の最終関門)→**S5**(分析のスキーマ設計で真鍋が型を運用) |
+| 戸倉「器の話でほんまに詰まったときだけは、来い」(ここぞ登場の下地) | **db/ex03** | S5で一度(帳面レビューか葉書)、**S10**で一言(全キャラ集結)。万能化しない——出るたびに入退場を丁寧に |
+| 閉店後の「帳面の会」(真鍋×戸倉の隠れた師弟。戸倉の隠れAWS勉強) | **db/ex03**(芽)以後は匂わせのみ | S5以降の要所で一言・葉書で継続。帳面の隅の横文字メモは気づいても指摘しない |
+| 戸倉が「教える人」になった"何か"(若い頃は教える人ではなかった) | **db/ex03**で匂わせ一箇所のみ | **S5でジャブ→S10でストレート**。S5=輪郭だけ(戸倉が自分から半歩漏らすが言い切らない。真鍋も聞き返さない——一往復の作法を守る)。S10=本回収("何か"の中身が明かされ、戸倉が助けに来る理由と重なる)。**中身の設定は引き続き作者預かり**——S5執筆着手時に監修者と確定する |
 
 ## ストレージ編(既刊)Updateプラン
 
