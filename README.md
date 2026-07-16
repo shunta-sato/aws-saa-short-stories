@@ -63,7 +63,15 @@ AWS認定ソリューションアーキテクト – アソシエイト(SAA-C03)
 | S3-05 | [検知して、止まって、戻せる](stories/security_identity_and_access/05_検知して止まって戻せる.md) | GuardDuty、Inspector、Macie、Detective、Security Hub、Artifact、Audit Manager、Network Firewall、Firewall Manager、Shield/WAF再掲 |
 | 幕間 | [使われていない鍵](stories/security_identity_and_access/ex04_使われていない鍵.md) | 認証情報レポート・最終アクセス情報(用語集外の頻出補強)。シーズンエピローグ |
 
-シーズン4以降(データベース、分析…)の構成は [plots/series-plan.md](plots/series-plan.md) を参照してください。
+#### シーズン4: 記録の器(データベース)(3年目春〜)
+
+全4話+幕間3本。シーズンアーク「数える人」。順次公開。
+
+| # | タイトル | 主な内容 |
+|---|---|---|
+| S4-01 | [行列は窓口で分ける](stories/database_architecture/01_行列は窓口で分ける.md) | RDS(Multi-AZ、リードレプリカ、Proxy、バックアップ/PITR、ストレージ自動拡張)、ElastiCache(Redis/Memcached、キャッシュ戦略) |
+
+シーズン4の残りと、シーズン5以降(分析…)の構成は [plots/series-plan.md](plots/series-plan.md) を参照してください。
 
 進捗と分野別の残り用語は [docs/coverage.md](docs/coverage.md) を参照(ストレージ57語・レジリエンス/DR 13語・ネットワーク75語・セキュリティ/ID 67語はカバー完了)。
 
