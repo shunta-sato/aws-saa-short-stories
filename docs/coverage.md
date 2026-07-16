@@ -6,6 +6,7 @@
 |---|---|---|
 | stories/database_architecture/01_行列は窓口で分ける.md | photorim | 16 |
 | stories/database_architecture/02_六つの写し一つの器.md | photorim | 11 |
+| stories/database_architecture/03_一万件は嘘をつく.md | photorim | 0 |
 | stories/database_architecture/ex01_パスワードのない扉.md | photorim | 0 |
 | stories/database_architecture/ex02_巻き戻しの作法.md | photorim | 0 |
 | stories/networking_and_application_security/01_一本の通り道.md | photorim | 12 |
