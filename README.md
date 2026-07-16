@@ -73,6 +73,7 @@ AWS認定ソリューションアーキテクト – アソシエイト(SAA-C03)
 | 幕間 | [パスワードのない扉](stories/database_architecture/ex01_パスワードのない扉.md) | IAMデータベース認証(用語集外の頻出補強) |
 | S4-02 | [六つの写し、一つの器](stories/database_architecture/02_六つの写し一つの器.md) | Aurora(クラスターボリューム、レプリカ、エンドポイント、Serverless v2、Global Database)、特化型DB(Redshift/DocumentDB/Neptune/Keyspaces)の使い分け |
 | 幕間 | [巻き戻しの作法](stories/database_architecture/ex02_巻き戻しの作法.md) | Aurora Backtrack(用語集外の頻出補強) |
+| S4-03 | [一万件は嘘をつく](stories/database_architecture/03_一万件は嘘をつく.md) | データ設計と検証の作法——分布まで写して初めて検証(担当語なし・物語推進回) |
 
 シーズン4の残りと、シーズン5以降(分析…)の構成は [plots/series-plan.md](plots/series-plan.md) を参照してください。
 
