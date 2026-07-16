@@ -1,10 +1,11 @@
 # 用語カバレッジ
 
-担当済み: 232語 / 全441語
+担当済み: 243語 / 全441語
 
 | 編 | universe | 担当語数 |
 |---|---|---|
 | stories/database_architecture/01_行列は窓口で分ける.md | photorim | 16 |
+| stories/database_architecture/02_六つの写し一つの器.md | photorim | 11 |
 | stories/database_architecture/ex01_パスワードのない扉.md | photorim | 0 |
 | stories/networking_and_application_security/01_一本の通り道.md | photorim | 12 |
 | stories/networking_and_application_security/02_門は増やして道は閉じる.md | photorim | 12 |
@@ -47,9 +48,9 @@
 
 `amazon_athena`, `amazon_comprehend`, `amazon_data_firehose`, `amazon_elastic_transcoder`, `amazon_emr`, `amazon_kendra`, `amazon_kinesis`, `amazon_kinesis_video_streams`, `amazon_lex`, `amazon_managed_streaming_for_apache_kafka_amazon_msk`, `amazon_opensearch_service`, `amazon_polly`, `amazon_quicksuite`, `amazon_rekognition`, `amazon_sagemaker_ai`, `amazon_textract`, `amazon_transcribe`, `amazon_translate`, `athena_federated_query`, `athena_partitioning`, `athena_workgroup`, `aws_data_exchange`, `aws_glue`, `aws_lake_formation`, `data_lake`, `firehose_buffering_hint`, `firehose_delivery_stream`, `firehose_record_transformation`, `glue_crawler`, `glue_data_catalog`, `glue_etl_job`, `kinesis_data_streams`, `kinesis_enhanced_fan_out`, `kinesis_partition_key`, `kinesis_retention_period`, `kinesis_shard`, `parquet_columnar_format`, `redshift_copy_unload`, `redshift_spectrum`
 
-### database_architecture (41語) — 残り25語
+### database_architecture (41語) — 残り14語
 
-`amazon_aurora`, `amazon_aurora_serverless`, `amazon_documentdb`, `amazon_dynamodb`, `amazon_keyspaces`, `amazon_neptune`, `amazon_redshift`, `aurora_cluster_volume`, `aurora_global_database`, `aurora_replica`, `aurora_serverless_v2_capacity`, `aurora_writer_reader_endpoint`, `dynamodb_autoscaling`, `dynamodb_consistency_models`, `dynamodb_dax`, `dynamodb_global_tables`, `dynamodb_gsi`, `dynamodb_lsi`, `dynamodb_on_demand_capacity`, `dynamodb_partition_key`, `dynamodb_pitr`, `dynamodb_provisioned_capacity`, `dynamodb_rcu_wcu`, `dynamodb_sort_key`, `dynamodb_ttl`
+`amazon_dynamodb`, `dynamodb_autoscaling`, `dynamodb_consistency_models`, `dynamodb_dax`, `dynamodb_global_tables`, `dynamodb_gsi`, `dynamodb_lsi`, `dynamodb_on_demand_capacity`, `dynamodb_partition_key`, `dynamodb_pitr`, `dynamodb_provisioned_capacity`, `dynamodb_rcu_wcu`, `dynamodb_sort_key`, `dynamodb_ttl`
 
 ### decoupling_and_integration (31語) — 残り31語
 
