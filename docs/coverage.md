@@ -5,6 +5,7 @@
 | 編 | universe | 担当語数 |
 |---|---|---|
 | stories/database_architecture/01_行列は窓口で分ける.md | photorim | 16 |
+| stories/database_architecture/ex01_パスワードのない扉.md | photorim | 0 |
 | stories/networking_and_application_security/01_一本の通り道.md | photorim | 12 |
 | stories/networking_and_application_security/02_門は増やして道は閉じる.md | photorim | 12 |
 | stories/networking_and_application_security/03_行事の朝の受付戦争.md | photorim | 14 |
