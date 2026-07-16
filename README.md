@@ -70,6 +70,7 @@ AWS認定ソリューションアーキテクト – アソシエイト(SAA-C03)
 | # | タイトル | 主な内容 |
 |---|---|---|
 | S4-01 | [行列は窓口で分ける](stories/database_architecture/01_行列は窓口で分ける.md) | RDS(Multi-AZ、リードレプリカ、Proxy、バックアップ/PITR、ストレージ自動拡張)、ElastiCache(Redis/Memcached、キャッシュ戦略) |
+| 幕間 | [パスワードのない扉](stories/database_architecture/ex01_パスワードのない扉.md) | IAMデータベース認証(用語集外の頻出補強) |
 
 シーズン4の残りと、シーズン5以降(分析…)の構成は [plots/series-plan.md](plots/series-plan.md) を参照してください。
 
