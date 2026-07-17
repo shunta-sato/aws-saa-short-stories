@@ -75,10 +75,11 @@ AWS認定ソリューションアーキテクト – アソシエイト(SAA-C03)
 | 幕間 | [巻き戻しの作法](stories/database_architecture/ex02_巻き戻しの作法.md) | Aurora Backtrack(用語集外の頻出補強) |
 | S4-03 | [一万件は嘘をつく](stories/database_architecture/03_一万件は嘘をつく.md) | データ設計と検証の作法——分布まで写して初めて検証(担当語なし・物語推進回) |
 | 幕間 | [豆の帳面](stories/database_architecture/ex03_豆の帳面.md) | 戸倉重雄の29年——記録を付ける人(人物回) |
+| S4-04 | [数えてから、建てる](stories/database_architecture/04_数えてから建てる.md) | DynamoDB(パーティションキー/ソートキー、GSI/LSI、RCU/WCU、オンデマンド/プロビジョンド+Auto Scaling、整合性モデル、TTL、PITR、グローバルテーブル、DAX) |
 
-シーズン4の残りと、シーズン5以降(分析…)の構成は [plots/series-plan.md](plots/series-plan.md) を参照してください。
+シーズン5以降(分析…)の構成は [plots/series-plan.md](plots/series-plan.md) を参照してください。
 
-進捗と分野別の残り用語は [docs/coverage.md](docs/coverage.md) を参照(ストレージ57語・レジリエンス/DR 13語・ネットワーク75語・セキュリティ/ID 67語はカバー完了)。
+進捗と分野別の残り用語は [docs/coverage.md](docs/coverage.md) を参照(ストレージ57語・レジリエンス/DR 13語・ネットワーク75語・セキュリティ/ID 67語・データベース41語はカバー完了)。
 
 ## リポジトリ構成
 
