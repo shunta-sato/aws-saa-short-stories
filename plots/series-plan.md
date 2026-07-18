@@ -17,7 +17,7 @@
 | 2 | 城の通りと門(ネットワーク) | networking_and_application_security | 6 | plots/network-01〜06 | 2年目春〜夏 |
 | 3 | 鍵と名札(セキュリティ/ID) | security_identity_and_access | 5 | 構想(下記) | 2年目秋〜冬 |
 | 4 | 記録の器(データベース) | database_architecture | 4 | plots/database-01〜04 | 3年目春〜夏 |
-| 5 | 流れる記録(取り込み・分析) | data_ingestion_and_analytics | 3 | 構想 | 3年目夏 |
+| 5 | 流れる記録(取り込み・分析) | data_ingestion_and_analytics | 3 | plots/analytics-01〜03 | 3年目夏〜秋 |
 | 6 | 動かす力(コンピューティング) | compute_and_containers | 3 | 構想 | 3年目秋 |
 | 7 | ほどよい距離(疎結合) | decoupling_and_integration | 2 | 構想 | 3年目冬 |
 | 8 | 誰がいなくても(運用・ガバナンス) | management_governance_and_observability | 3 | 構想 | 4年目春 |
@@ -96,11 +96,28 @@ S2の各話の火種は、前話の応急処置が生んだ歪みから連鎖さ
 | ex02 巻き戻しの作法 | Aurora Backtrack(PITRとの対比) | db/02の直後(db/03の前) | 真鍋の検証事故と矢吹のテープ巻き戻しの記憶。青柳×真鍋の初共同作業 |
 | ex03 豆の帳面 | (人物回・技術新出なし)戸倉重雄の29年と「記録を付ける人」 | db/03の直後(db/04の前) | 帳面を返しに行く真鍋+美咲。豆の台帳=人間版アクセスパターン。「引けん記録は、無いのと同じや」 |
 
+## S5 流れる記録編の話単位割当(39語/3話+幕間2本)
+
+**シーズンアーク「数えながら、流す」**: 3年目夏〜秋。秋β公開を跨ぎ、真鍋がメインを張る。S4で数え切った中身を、今度はリアルタイムに流し(川)、湖に貯め(台帳)、機械に読ませる(裏書き)。人間側の主題は二つ——①戸倉の系譜の制度化(帳面→カタログ→設計レビューの型の運用)と"何か"のジャブ(S5-02)、②「機械が書く裏書き」の責任(自動で書く・人が承る)。瀬名の東京行き来は続く(理由は書かない——S8前震)。
+
+| 話 | タイトル(案) | 担当用語(数) |
+|---|---|---|
+| an/01 | 数えながら、流す | amazon_kinesis, kinesis_data_streams, kinesis_shard, kinesis_partition_key, kinesis_retention_period, kinesis_enhanced_fan_out, amazon_data_firehose, firehose_delivery_stream, firehose_buffering_hint, firehose_record_transformation, amazon_managed_streaming_for_apache_kafka_amazon_msk, amazon_kinesis_video_streams (12) |
+| an/02 | 湖の底の台帳 | data_lake, aws_glue, glue_crawler, glue_data_catalog, glue_etl_job, parquet_columnar_format, amazon_athena, athena_partitioning, athena_workgroup, athena_federated_query, aws_lake_formation, amazon_opensearch_service, amazon_emr, redshift_spectrum, redshift_copy_unload (15) |
+| an/03 | 写真が言葉になる日 | amazon_rekognition, amazon_transcribe, amazon_translate, amazon_comprehend, amazon_textract, amazon_polly, amazon_lex, amazon_kendra, amazon_sagemaker_ai, amazon_quicksuite, amazon_elastic_transcoder, aws_data_exchange (12) |
+
+### S5幕間(ショートショート)
+
+| 幕間 | 主題 | 配置 | エンタメの核 |
+|---|---|---|---|
+| ex01 流れの中の算盤 | Managed Service for Apache Flink(ウィンドウ集計) | an/01の直後 | 城戸×青柳。「締めのない数字を信じてええんですか」→速報と確定の二本立て |
+| ex02 借りない倉庫 | Redshift Serverless(RPU従量) | an/02の直後 | 城戸の倹約回。「使うた分だけ借りる、いう借り方」。削った金は消すな、移せ(S8/S9への種) |
+
 ## S3以降の用語割当(シーズンレベル、話単位は各シーズン着手時に確定)
 
 - **S3 セキュリティ/ID(67語/5話+幕間4本)**: 話単位の割当・シーズンアーク・幕間は上の「S3 鍵と名札編」節を正典とする。
 - **S4 データベース(41語/4話+幕間3本)**: 話単位の割当・シーズンアーク・幕間は上の「S4 記録の器編」節を正典とする。
-- **S5 取り込み・分析(39語/3話)**: ①Kinesis/Firehose/MSK ②Glue/Athena/Lake Formation/Redshift ③AI系サービス+QuickSuite(写真の自動タグ付け文脈)。真鍋メイン。
+- **S5 取り込み・分析(39語/3話+幕間2本)**: 話単位の割当・シーズンアーク・幕間は上の「S5 流れる記録編」節を正典とする。真鍋メイン。
 - **S6 コンピューティング(39語/3話)**: ①EC2/ASG/起動テンプレート/スケーリングポリシー ②ECS/EKS/Fargate/Batch/Beanstalk ③Lambda詳説+Outposts/Wavelength。
 - **S7 疎結合(31語/2話)**: ①SQS/SNS ②EventBridge/Step Functions/Streams。
 - **S8 運用・ガバナンス(39語/3話)**: ①CloudWatch/X-Ray/Grafana ②CloudFormation/Organizations/Control Tower/Service Catalog ③SSM/Config/CloudTrail/Trusted Advisor/W-A。**③が「瀬名がいない日」本番回**(human SPOF、break-glass、守屋の伏線全回収)。
@@ -130,7 +147,7 @@ S2の各話の火種は、前話の応急処置が生んだ歪みから連鎖さ
 | 戸倉の帳面「器を替える日は、間取りを疑う日」・設計レビューの型 | **db/03** | db/04(GA前の最終関門)→**S5**(分析のスキーマ設計で真鍋が型を運用) |
 | 戸倉「器の話でほんまに詰まったときだけは、来い」(ここぞ登場の下地) | **db/ex03** | S5で一度(帳面レビューか葉書)、**S10**で一言(全キャラ集結)。万能化しない——出るたびに入退場を丁寧に |
 | 閉店後の「帳面の会」(真鍋×戸倉の隠れた師弟。戸倉の隠れAWS勉強) | **db/ex03**(芽)以後は匂わせのみ | S5以降の要所で一言・葉書で継続。帳面の隅の横文字メモは気づいても指摘しない |
-| 戸倉が「教える人」になった"何か"(若い頃は教える人ではなかった) | **db/ex03**で匂わせ一箇所のみ | **S5でジャブ→S10でストレート**。S5=輪郭だけ(戸倉が自分から半歩漏らすが言い切らない。真鍋も聞き返さない——一往復の作法を守る)。S10=本回収("何か"の中身が明かされ、戸倉が助けに来る理由と重なる)。**中身の設定は引き続き作者預かり**——S5執筆着手時に監修者と確定する |
+| 戸倉が「教える人」になった"何か"(若い頃は教える人ではなかった) | **db/ex03**で匂わせ一箇所のみ | **S5でジャブ→S10でストレート**。S5-02の帳面の会で輪郭だけ(戸倉が自分から半歩漏らすが言い切らない。真鍋も聞き返さない)。S10=本回収。**中身は確定済み(監修者承認)**: 「引けない帳面の悔い」——DC閉鎖を前に、29冊の帳面が自分にしか引けない記録だと悟った。「引けん記録は、無いのと同じ」が自分自身に跳ね返った日から、読める人を残すことが彼の仕事になった。S10で助けに来る理由=記録の会社の危機に「読める人を残しに来る」 |
 
 ## ストレージ編(既刊)Updateプラン
 
