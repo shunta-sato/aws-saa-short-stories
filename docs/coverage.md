@@ -5,6 +5,7 @@
 | 編 | universe | 担当語数 |
 |---|---|---|
 | stories/data_ingestion_and_analytics/01_数えながら流す.md | photorim | 12 |
+| stories/data_ingestion_and_analytics/ex01_流れの中の算盤.md | photorim | 0 |
 | stories/database_architecture/01_行列は窓口で分ける.md | photorim | 16 |
 | stories/database_architecture/02_六つの写し一つの器.md | photorim | 11 |
 | stories/database_architecture/03_一万件は嘘をつく.md | photorim | 0 |
