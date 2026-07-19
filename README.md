@@ -77,7 +77,15 @@ AWS認定ソリューションアーキテクト – アソシエイト(SAA-C03)
 | 幕間 | [豆の帳面](stories/database_architecture/ex03_豆の帳面.md) | 戸倉重雄の29年——記録を付ける人(人物回) |
 | S4-04 | [数えてから、建てる](stories/database_architecture/04_数えてから建てる.md) | DynamoDB(パーティションキー/ソートキー、GSI/LSI、RCU/WCU、オンデマンド/プロビジョンド+Auto Scaling、整合性モデル、TTL、PITR、グローバルテーブル、DAX) |
 
-シーズン5以降(分析…)の構成は [plots/series-plan.md](plots/series-plan.md) を参照してください。
+#### シーズン5: 流れる記録(取り込み・分析)(3年目夏〜秋)
+
+全3話+幕間2本。シーズンアーク「数えながら、流す」。順次公開。
+
+| # | タイトル | 主な内容 |
+|---|---|---|
+| S5-01 | [数えながら、流す](stories/data_ingestion_and_analytics/01_数えながら流す.md) | Kinesis Data Streams(シャード、パーティションキー、保持期間、拡張ファンアウト)、Data Firehose(配信ストリーム、バッファリングヒント、レコード変換)、MSK、Kinesis Video Streams |
+
+シーズン6以降(コンピューティング…)の構成は [plots/series-plan.md](plots/series-plan.md) を参照してください。
 
 進捗と分野別の残り用語は [docs/coverage.md](docs/coverage.md) を参照(ストレージ57語・レジリエンス/DR 13語・ネットワーク75語・セキュリティ/ID 67語・データベース41語はカバー完了)。
 
