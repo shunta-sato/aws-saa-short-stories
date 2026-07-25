@@ -1,10 +1,11 @@
 # 用語カバレッジ
 
-担当済み: 269語 / 全441語
+担当済み: 284語 / 全441語
 
 | 編 | universe | 担当語数 |
 |---|---|---|
 | stories/data_ingestion_and_analytics/01_数えながら流す.md | photorim | 12 |
+| stories/data_ingestion_and_analytics/02_湖の底の台帳.md | photorim | 15 |
 | stories/data_ingestion_and_analytics/ex01_流れの中の算盤.md | photorim | 0 |
 | stories/database_architecture/01_行列は窓口で分ける.md | photorim | 16 |
 | stories/database_architecture/02_六つの写し一つの器.md | photorim | 11 |
@@ -50,9 +51,9 @@
 
 `aws_budgets`, `aws_cost_and_usage_report`, `aws_cost_explorer`, `budgets_actions`, `cloudfront_data_transfer_savings`, `cloudfront_price_class`, `compute_optimizer_recommendation`, `compute_savings_plans`, `convertible_reserved_instances`, `cost_allocation_tags`, `data_transfer_cost`, `data_transfer_cross_az`, `data_transfer_inter_region`, `ec2_capacity_reservation`, `ec2_dedicated_host`, `ec2_instance_savings_plans`, `ec2_on_demand_instances`, `ec2_spot_interruption`, `fargate_spot`, `intelligent_tiering_monitoring_fee`, `nat_gateway_data_processing_cost`, `organizations_consolidated_billing`, `reserved_instance_utilization_coverage`, `reserved_instances`, `s3_requester_pays`, `savings_plans`, `savings_plans_utilization_coverage`, `spot_instances`, `standard_reserved_instances`, `vpc_endpoint_cost_optimization`
 
-### data_ingestion_and_analytics (39語) — 残り27語
+### data_ingestion_and_analytics (39語) — 残り12語
 
-`amazon_athena`, `amazon_comprehend`, `amazon_elastic_transcoder`, `amazon_emr`, `amazon_kendra`, `amazon_lex`, `amazon_opensearch_service`, `amazon_polly`, `amazon_quicksuite`, `amazon_rekognition`, `amazon_sagemaker_ai`, `amazon_textract`, `amazon_transcribe`, `amazon_translate`, `athena_federated_query`, `athena_partitioning`, `athena_workgroup`, `aws_data_exchange`, `aws_glue`, `aws_lake_formation`, `data_lake`, `glue_crawler`, `glue_data_catalog`, `glue_etl_job`, `parquet_columnar_format`, `redshift_copy_unload`, `redshift_spectrum`
+`amazon_comprehend`, `amazon_elastic_transcoder`, `amazon_kendra`, `amazon_lex`, `amazon_polly`, `amazon_quicksuite`, `amazon_rekognition`, `amazon_sagemaker_ai`, `amazon_textract`, `amazon_transcribe`, `amazon_translate`, `aws_data_exchange`
 
 ### database_architecture (41語) — ✅ 完了
 
