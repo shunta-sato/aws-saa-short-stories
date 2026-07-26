@@ -88,6 +88,7 @@ AWS認定ソリューションアーキテクト – アソシエイト(SAA-C03)
 | S5-01 | [数えながら、流す](stories/data_ingestion_and_analytics/01_数えながら流す.md) | Kinesis Data Streams(シャード、パーティションキー、保持期間、拡張ファンアウト)、Data Firehose(配信ストリーム、バッファリングヒント、レコード変換)、MSK、Kinesis Video Streams |
 | 幕間 | [流れの中の算盤](stories/data_ingestion_and_analytics/ex01_流れの中の算盤.md) | Managed Service for Apache Flink——ウィンドウ集計(用語集外の頻出補強) |
 | S5-02 | [湖の底の台帳](stories/data_ingestion_and_analytics/02_湖の底の台帳.md) | データレイク、Glue(Data Catalog、クローラー、ETLジョブ)、Parquet、Athena(パーティション、ワークグループ、フェデレーテッドクエリ)、Lake Formation、OpenSearch Service、EMR、Redshift Spectrum、COPY/UNLOAD |
+| 幕間 | [借りない倉庫](stories/data_ingestion_and_analytics/ex02_借りない倉庫.md) | Redshift Serverless——RPU従量の借り方(用語集外の頻出補強) |
 
 シーズン6以降(コンピューティング…)の構成は [plots/series-plan.md](plots/series-plan.md) を参照してください。
 
